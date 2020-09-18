@@ -1,13 +1,13 @@
 {
-  "entryPagePath": "pages/index/index",
-  "pages": [
-    "pages/index/index",
-    "pages/invite/invite"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "SubTool",
-    "navigationBarTextStyle": "black"
-  }
+    "entryPagePath": "pages/index/index",
+    "pages": [
+        "pages/index/index",
+        "pages/invite/invite"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "SubTool",
+        "navigationBarTextStyle": "black"
+    }
 }

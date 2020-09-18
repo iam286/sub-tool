@@ -1,53 +1,60 @@
-/* pages/others/invite/invite.wxss */
-.head{
-  height: 250rpx;
-  position: relative;
-  background-color: #108ee9;
+/* pages/invite/invite.wxss */
+.head {
+    height: 250rpx;
+    position: relative;
+    background-color: #108ee9;
 }
-.img{
+
+.img {
     width: 100rpx;
     height: 100rpx;
     border-radius: 50rpx;
     position: absolute;
-    top: 75rpx; left: 70rpx;
+    top: 75rpx;
+    left: 70rpx;
 }
 
-.name{
+.name {
     font-size: 34rpx;
     color: #fff;
     position: absolute;
-    top: 75rpx; left: 200rpx;
+    top: 75rpx;
+    left: 200rpx;
 }
 
-.schoolName{
+.schoolName {
     font-size: 30rpx;
     color: #fff;
     position: absolute;
-    bottom: 75rpx; left: 200rpx;
+    bottom: 75rpx;
+    left: 200rpx;
 }
 
-.content{
-  padding: 10%;
-  text-align: center;
+.content {
+    padding: 10%;
+    text-align: center;
 }
 
-.hint{
+.hint {
     font-size: 30rpx;
     color: #333;
     line-height: 0.5rem;
 }
 
-.image{
+.image {
     width: 450rpx;
     height: 500rpx;
     position: relative;
     top: 60rpx;
 }
 
-.hintB{
+.hintB {
     width: 40%;
     font-size: 28rpx;
     color: gray;
     position: absolute;
-    top: 85%; left: 30%; bottom: 0; right: 0;
+    top: 85%;
+    left: 30%;
+    bottom: 0;
+    right: 0;
 }
