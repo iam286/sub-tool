@@ -1,2 +1,2 @@
-### SubTool
-- personal tools
+# sub-tool
+WeChat mini program
