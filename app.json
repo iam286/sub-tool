@@ -2,6 +2,7 @@
     "entryPagePath": "pages/index/index",
     "pages": [
         "pages/index/index",
+        "pages/accent/accent",
         "pages/invite/invite"
     ],
     "window": {

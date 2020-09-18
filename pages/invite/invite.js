@@ -1,19 +1,14 @@
 // pages/invite/invite.js
 const app = getApp();
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
         userInfo: {
-            avator: '/image/logo.png',
-            nickName: 'Kay',
-            schoolName: 'testname',
-            qrCode: '/image/wx-qrcode.png'
-        },
+            qrCode: ""
+        }
     },
-
     longpress: function () {
         wx.downloadFile({
             url: "https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E7%8B%97&step_word=&hs=0&pn=4&spn=0&di=25223393250&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3382112465%2C4243277534&os=2464441298%2C3520614443&simid=3355577065%2C95065934&adpicid=0&lpn=0&ln=1400&fr=&fmq=1533894684731_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fae51f3deb48f8c54273329d53d292df5e1fe7f6c.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fzit1w5_z%26e3Bkwt17_z%26e3Bv54AzdH3Fq7jfpt5gAzdH3Fcbmc98cnbcdncc8ndc_z%26e3Bip4s&gsm=0&rpstart=0&rpnum=0&islist=&querylist=",

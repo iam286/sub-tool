@@ -1,100 +1,39 @@
 <!--index.wxml-->
 <view class="container">
 	<view class="indexCard">
-		<image class="indexCardBg" src="{{template.bgUrl}}"></image>
+		<image class="indexCardBg" src="{{baseInfo.bgUrl}}"></image>
 		<view class="indexCardContent">
 			<view class="row-left" style="position: absolute;top: 30rpx;">
 				<view>
-					<image src="{{template.logo}}" style="width:60rpx;height:60rpx;float: left;" />
-					<label style="float: left; margin-left:20rpx;color:#FFF;font-size:16px">{{template.template_name}}</label>
-					<view style="clear:both;"></view>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">工名：</label>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">{{userInfo.nickName}}</label>
 				</view>
 				<view>
-					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">姓名：</label>
-					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">{{template.name}}</label>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">工号：</label>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">{{baseInfo.work_no}}</label>
 				</view>
 				<view>
-					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">学号：</label>
-					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">{{template.work_no}}</label>
+					<label style="float:left;margin-top:80rpx;color:#FFF;font-size:16px">{{baseInfo.welcome_message}}</label>
 				</view>
 			</view>
 			<view class="row-right" style="position: absolute;top: 30rpx; right:0">
-				<image src="{{template.qrcode}}" style="width:90rpx;height:90rpx;margin-top:10px;"></image>
+				<image src="{{userInfo.avatarUrl}}" style="width:90rpx;height:90rpx;margin-top:10px;border-radius: 50%;"></image>
 			</view>
 		</view>
 	</view>
 
-	<!--校园生活-->
-	<text class="order-title" style="margin-top:30rpx;">校园生活</text>
+	<text class="order-title" style="margin-top:30rpx;font-weight:bold">学习角</text>
 	<view class="order">
-		<view class="order-con" bindtap="myBill">
+		<view class="order-con" bindtap="accent">
 			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon19.png"></image>
-				<text class="orders-text" >我的账单</text>
+				<image class="orders-image" src="/image/icon/educate.png"></image>
+				<text class="orders-text">KK音标</text>
 			</view>
 		</view>
-		<view class="order-con" bindtap="recharge">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon12.png"></image>
-				<text class="orders-text">一卡通充值</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goInOutOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon27.png"></image>
-				<text class="orders-text">卡片挂失</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goInOutOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon14.png"></image>
-				<text class="orders-text">余额查询</text>
-			</view>
-		</view>
-	</view>
-
-	<!--校园缴费-->
-	<text class="order-title">校园缴费</text>
-	<view class="order">
-		<view class="order-con" bindtap="pay">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon34.png"></image>
-				<text class="orders-text" >水费</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goDraftOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon34.png"></image>
-				<text class="orders-text">电费</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goInOutOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon9.png"></image>
-				<text class="orders-text">缴费明细</text>
-			</view>
-		</view>
-	</view>
-
-	<!--其他-->
-	<text class="order-title">其他</text>
-	<view class="order" style="margin-bottom:40rpx;">
 		<view class="order-con" bindtap="invite">
 			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon29.png"></image>
-				<text class="orders-text" >邀请好友</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goDraftOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon7.png"></image>
-				<text class="orders-text">校园公告</text>
-			</view>
-		</view>
-		<view class="order-con" bindtap="goInOutOrder">
-			<view class="orders">
-				<image class="orders-image" src="/image/icon/campusIcon26.png"></image>
-				<text class="orders-text">修改密码</text>
+				<image class="orders-image" src="/image/icon/share.png"></image>
+				<text class="orders-text">好友分享</text>
 			</view>
 		</view>
 	</view>

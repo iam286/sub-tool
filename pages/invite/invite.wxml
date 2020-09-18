@@ -2,13 +2,12 @@
 
 <view class='invite'>
 	<view class="head">
-		<image class="img" src="{{userInfo.avator}}" />
+		<image class="img" src="{{userInfo.avatarUrl}}" />
 		<text class="name">{{userInfo.nickName}}</text>
-		<text class="schoolName">{{userInfo.schoolName}}</text>
 	</view>
 	<view class="content">
-		<text class="hint">分享二维码图片到朋友圈/微博，邀请同学进入支付宝扫描二维码，领取电子校园卡。</text>
+		<text class="hint"></text>
 		<image bindlongpress="longpress" class="image" src="{{userInfo.qrCode}}"></image>
-		<text class="hintB">[长按保存/分享二维码]</text>
+		<text class="hintB"></text>
 	</view>
 </view>

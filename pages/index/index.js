@@ -4,28 +4,19 @@ const app = getApp()
 
 Page({
     data: {
-        template: {
-            bgUrl: '/image/bg.png',
-            logo: '/image/logo.png',
-            name: 'Kay',
-            work_no: 13131313113,
-            template_name: '子工具名称',
-            qrcode: '/image/qrcode.png'
+        baseInfo: {
+            bgUrl: '/image/bg.jpg',
+            welcome_message: '你好啊，旅行者！',
+            work_no: "001"
+        },
+        userInfo: {
+            avatarUrl: "/image/sub_tool.png",
+            nickName: "工具人"
         }
     },
-    myBill: function () {//跳转到我的账单
+    accent: function () {
         wx.navigateTo({
-            url: ''
-        })
-    },
-    recharge: function () {//跳转到银通校园
-        wx.navigateTo({
-            url: ''
-        })
-    },
-    pay: function () {//跳转到缴费
-        wx.navigateTo({
-            url: ''
+            url: '/pages/accent/accent'
         })
     },
     invite: function () {//跳转到邀请好友
