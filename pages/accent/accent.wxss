@@ -1,0 +1,21 @@
+.indexCard {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.indexCardBg {
+    height: 400rpx;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.indexCardContent {
+    height: 350rpx;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}

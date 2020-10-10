@@ -1,6 +1,13 @@
 <view class='accent'>
-	<view class="head">
-	</view>
-	<view class="content">
+	<view class="indexCard">
+		<image class="indexCardBg" src="{{baseInfo.bgUrl}}"></image>
+		<view class="indexCardContent">
+			<view class="row-left" style="position: absolute;top: 30rpx;">
+				<view>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">Tips:</label>
+					<label style="margin-top:20rpx;color:#FFF;font-size:14px;display:inline-block;">{{baseInfo.content}}</label>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>

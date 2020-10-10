@@ -5,7 +5,7 @@ const app = getApp()
 Page({
     data: {
         baseInfo: {
-            bgUrl: '/image/bg.jpg',
+            bgUrl: '/image/background.jpg',
             welcome_message: '你好啊，旅行者！',
             work_no: "001"
         },
